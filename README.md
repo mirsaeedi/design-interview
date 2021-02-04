@@ -48,11 +48,11 @@ I decided to prepare a framework for myself as a way for tackling design questio
 
 When the broad design is finalized, dive into the details. Ask the interviewer about which component should be discussed in depth. 
 
-    * Data layer (Schema, infrastructure) 
-    * Web app layer 
-    * API (REST) 
-    * Front-end 
-    * Infrastructure
+   * Data layer (Schema, infrastructure) 
+   * Web app layer 
+   * API (REST) 
+   * Front-end 
+   * Infrastructure
 
 **Data**: When designing the data layer, consider the following concerns: 
  
@@ -78,7 +78,7 @@ When the broad design is finalized, dive into the details. Ask the interviewer a
       * Messaging
      * Avoid chatty microservices 
 
-  * How's the service discovery is implemented? 
+  * How is the service discovery implemented? 
     * Kubernetes services 
     * Zookeeper 
 
@@ -86,21 +86,25 @@ When the broad design is finalized, dive into the details. Ask the interviewer a
     * SignalR 
     * Azure Notification Service 
 
- * How we design the system? 
+ ## Some ideas for designing a service
 
   * DDD 
     * Divide the application logic to three layers as Application Layer (API), Domain Layer (models and contracts, persistence ignorant, infrastructure ignorant), and Infrastructure Layer (communicates with external systems ) 
     * Use rich domain models instead of anemic models 
-    * Use aggregates as a transaction boundary and validator gaurd 
+    * Use aggregates as a transaction boundary and a validator gaurd 
 
-  * CQRS: Do we need to scale write and read separately at application/data level? 
+  * CQRS
+    * Do we need to scale write and read separately at application and data level? 
     * DDD is used in the write section of the architecture. For reads, we can use simpler approaches. 
     * We do not benfit from using rich domain models and aggregates in query side. They're meant to be used for writes. 
     * In CQRS, implementing repository pattern is not suggested. 
    
-   * Onion Architecture 
+  * Onion Architecture 
+
+ ## Nice things to not forget
 
   * How do you handle versioning? 
+  
   * Resiliency 
     * Techniques 
       * Asynchronous messaging 
@@ -114,4 +118,3 @@ When the broad design is finalized, dive into the details. Ask the interviewer a
       * Linkerd mesh 
 
   * Health checks 
-    * ASPNET 
