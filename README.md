@@ -19,13 +19,11 @@ I decided to prepare a framework for myself as a way for tackling design questio
     * Consistency vs Availability
     * Simplicity vs performance
 
-* Do we want to discuss the end-to-end experience or just the API? 
-
 ## Some questions you might need to ask
 
 1. Requirements should be discussed and clarified. 
 
-    * Understand use-cases. Suggest a few use cases. 
+    * Understand the use-cases or suggest a few use cases. 
     * Who is going to use it? 
     * How are they going to use it? 
     * What does the system do? 
@@ -41,40 +39,44 @@ I decided to prepare a framework for myself as a way for tackling design questio
     * What is the expected read to write ratio? 
     * How many users are there? 
     * How much data do we expect to handle? 
-    * Do we need to have one database per service? Do we need to have one single data storage for business data? What are pros and cons? 
+    * Do we need to have one database per service or do we need to have one single data storage? What are pros and cons? 
+    * Can we use Kubernetes in our design?
+    * Can we use cloud services in our design?
+    * Do we have any concerns about the cost?
+    
+## How to tackle the design
 
- 9. 
-
- 10. When the broad design is finalized, dive into the details. Ask the interviewer about which component should be discussed in depth. 
+When the broad design is finalized, dive into the details. Ask the interviewer about which component should be discussed in depth. 
 
     * Data layer (Schema, infrastructure) 
     * Web app layer 
     * API (REST) 
     * Front-end 
+    * Infrastructure
 
- 11. When designing the data layer, consider the following concerns: 
+**Data**: When designing the data layer, consider the following concerns: 
  
-    * Read/Write ratio: Should we have separate databases for read and write? How do we deal with eventual consistency? Do we need to scale write and read separately? 
-    * Do we need to have multiple write nodes? 
-    * Do we need to implement replication? 
-    * Do we need to think about storage cost and retention? 
-    * Do we need to distribute data geographically? 
-    * What types of data store we need to use? Do we need to use different data stores for different use cases? 
-    * Can business tolerate eventual consistency? 
-    * Should we implement distributed transactions? 
-    * Is data structured or unstructured? 
-    * Do we need to make joins on data to create complex reports?  
-    * Can we denormalize data? 
-    * How do you design non-relational schema? 
-
- 12. When designing the service layer, consider the following concerns: 
+   * Read/Write ratio: Should we have separate databases for read and write? How do we deal with eventual consistency? Do we need to scale write and read separately? 
+   * Do we need to have multiple write nodes? 
+   * Do we need to implement replication? 
+   * Do we need to think about storage cost and retention? 
+   * Do we need to distribute data geographically? 
+   * What types of data store we need to use? Do we need to use different data stores for different use cases? 
+   * Can business tolerate eventual consistency? 
+   * Should we implement distributed transactions? 
+   * Is data structured or unstructured? 
+   * Do we need to make joins on data to create complex reports?  
+   * Can we denormalize data? 
+   * How do you design non-relational schema? 
+   
+**Service (API/APP)**: When designing the service layer, consider the following concerns: 
  
-  * How services talk to each other?  
+  * How do services talk to each other?  
     * Protocols 
       * GRPC for communicating between internal systems 
       * HTTP for customer facing services (Leveraging Open API standard) 
-      * Messaging 
-        * Avoid chatty microservices 
+      * Messaging
+     * Avoid chatty microservices 
 
   * How's the service discovery is implemented? 
     * Kubernetes services 
