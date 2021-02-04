@@ -6,12 +6,12 @@ The presented framework here does not dive into details. It's short and concise;
 
 ## Some general tips to have in mind
 
-1. Design interview questions are meant to be vague and unclear. It's your job to clarify and define the the scope of the problem by asking **good** questions.
-   * The final proposed solution should satisfy the requirements. As you work toward the final design make sure all requirments are met.
-2. It's almost impossible to solve a deisgn problem in a 45 min session. They are not asked to get solved. The goal is to just measure your technical and critical thinking skills. 
+1. Design interview questions are meant to be vague and unclear. It's your job to clarify and define the scope of the problem by asking **good** questions.
+   * The final proposed solution should satisfy the requirements. As you work toward the final design make sure all requirements are met.
+2. It's almost impossible to solve a design problem in a 45 min session. They are not asked to get solved. The goal is to just measure your technical and critical thinking skills. 
 3. There's no right answer to design problems. Though, some answers are better and some answers are entirely wrong. 
-   * Your suggested design should be [scalable](https://www.allthingsdistributed.com/2006/03/a_word_on_scalability.html). In other words, the design should allow you to easilty add more resources to handle more load.  
-4. In design interview questions, interviewee should have a dialog with the interviewer. You are expected to lead the interview. Imagine you're having a discussion with your team.
+   * Your suggested design should be [scalable](https://www.allthingsdistributed.com/2006/03/a_word_on_scalability.html). In other words, the design should allow you to easily add more resources to handle more load.  
+4. In design interview questions, the interviewee should have a dialog with the interviewer. You are expected to lead the interview. Imagine you're having a discussion with your team.
 5. Start with a general overview of your system. Display what each component does and how they interact with each other.
 6. When working on your design do not forget to mention the trade-offs you're making 
     * Cost vs Performance
