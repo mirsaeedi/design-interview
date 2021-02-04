@@ -1,40 +1,41 @@
 # Cracking Design Interview Questions
 
-As I'm preparing for Microsoft interview, I'm trying to organize my knowledge on different software engineering topics. Having your mind organized helps you to go through design questions smoothly. It enables you to break down the question into smaller sub-problems. Also, it helps you to ask clarifying questions from the interviewer which in turn lets you dive into the details with more insight.
+As I'm getting prepared for Microsoft interview, I'm trying to organize my knowledge on a wide array of software engineering topics. Having your mind organized helps you to go through design questions smoothly, start from the bird eye view and delve into details as necessary. It enables you to break down the question into smaller sub-problems. Also, it helps you to ask clarifying questions from the interviewer to define the technical scope of the problem.
 
 I decided to prepare a framework for myself as a way for tackling design questions. The framework provides you with steps on how a question should be broken and clarified. Unlike most other articles on this topic, I do not intend to provide a guidance for juniors or folks who have just started learning about these kinds of interviews. The presented framework here is designed for myself and can be helpful for people with some years of real-world experience.
 
-1. Design interview questions are meant to be vague and unclear. You should ask clarifying questions. 
+## Some general tips to have in mind
 
-2. There's no right answer for design problems. Though, some answers are better and some answers are entirely wrong. 
-
-3. Scalability is one of the most important goals need to achieve by the suggested design. 
-
-4. In design interview questions, interviewee should have a dialog with the interviewer. You are expected to lead the interview. Imagine you're having a discussion with your team. 
-
-5. When working on your design do not forget to mention about the trade-offs you're making 
-
-    * Cost 
+1. Design interview questions are meant to be vague and unclear. It's your job to clarify and define the the scope of the problem by asking **good** questions.
+   * The final proposed solution should satisfy the requirements. As you work toward the final design make sure all requirments are met.
+2. It's almost impossible to solve a deisgn problem in a 45 min session. They are not asked to get solved. The goal is to just measure your technical and critical thinking skills. 
+3. There's no right answer to design problems. Though, some answers are better and some answers are entirely wrong. 
+   * Your suggested design should be [scalable](https://www.allthingsdistributed.com/2006/03/a_word_on_scalability.html). In other words, the design should allow you to easilty add more resources to handle more load.  
+4. In design interview questions, interviewee should have a dialog with the interviewer. You are expected to lead the interview. Imagine you're having a discussion with your team.
+5. Start with a general overview of your system. Display what each component does and how they interact with each other.
+6. When working on your design do not forget to mention the trade-offs you're making 
+    * Cost vs Performance
     * Storage vs Memory 
-    * Consistency vs Availability 
-    * Simplicity vs performance 
+    * Consistency vs Availability
+    * Simplicity vs performance
 
-6. Define the scope of the problem with your interviewer.  The final proposed solution should satisfy the requirements. 
+* Do we want to discuss the end-to-end experience or just the API? 
 
-7. Requirements should be discussed and clarified. 
+## Some questions you might need to ask
 
+1. Requirements should be discussed and clarified. 
+
+    * Understand use-cases. Suggest a few use cases. 
     * Who is going to use it? 
-    * Understand use-cases? 
     * How are they going to use it? 
     * What does the system do? 
     * What are the inputs and outputs of the system? 
-    * Do we want to discuss the end-to-end experience or just the API? 
     * What clients do we want to support (mobile, web, etc)? 
-    * Do we require authentication? Analytics? Integrating with existing systems? 
+    * Do we require authentication? Analytics? Notification? Integrating with existing systems? 
     * Ask about timezones? 
-    * Ask about geographical distributions of users? almost all products deployed in multiple locations 
+    * Ask about geographical distributions of users? Do we need to deploy in multiple locations? 
 
- 8. Constraints and assumptions should be identified. 
+ 2. Constraints and assumptions should be identified. 
 
     * How many requests per second do we expect? 
     * What is the expected read to write ratio? 
@@ -42,7 +43,7 @@ I decided to prepare a framework for myself as a way for tackling design questio
     * How much data do we expect to handle? 
     * Do we need to have one database per service? Do we need to have one single data storage for business data? What are pros and cons? 
 
- 9. Start with a general overview of your system. Display what each component does and how they interact with each other. 
+ 9. 
 
  10. When the broad design is finalized, dive into the details. Ask the interviewer about which component should be discussed in depth. 
 
