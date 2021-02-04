@@ -88,6 +88,10 @@ When the broad design is finalized, dive into the details. Ask the interviewer a
     * Kubernetes services 
     * Zookeeper 
 
+  * Do you need distributed lock?
+  
+  * Do you need to handle distributed transactions?
+
   * How do we send notifications to user? 
     * SignalR 
     * Azure Notification Service 
