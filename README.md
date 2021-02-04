@@ -61,7 +61,7 @@ When the broad design is finalized, dive into the details. Ask the interviewer a
    * Do we need to implement replication? 
    * Do we need to think about storage cost and retention? 
    * Do we need to distribute data geographically? 
-   * What types of data store we need to use? Do we need to use different data stores for different use cases? 
+   * What types of data stores we need to use? Do we need to use different data stores for different use cases? 
    * Can business tolerate eventual consistency? 
    * Should we implement distributed transactions? 
    * Is data structured or unstructured? 
