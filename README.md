@@ -68,6 +68,10 @@ When the broad design is finalized, dive into the details. Ask the interviewer a
    * Do we need to make joins on data to create complex reports?  
    * Can we denormalize data? 
    * How do you design non-relational schema? 
+   * How do you store files? 
+    * Azure Blob Storage
+   * How do you deliver files to end users?
+    * Azure CDN
    
 **Service (API/APP)**: When designing the service layer, consider the following concerns: 
  
