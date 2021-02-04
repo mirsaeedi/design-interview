@@ -97,6 +97,11 @@ When the broad design is finalized, dive into the details. Ask the interviewer a
     * Azure Blob Storage: leasing technique
   
   * Do you need to handle distributed transactions?
+    * Saga
+      * Choreography
+      * Orchestration
+    * Sql Server distributed transactions
+    * 2PC
 
   * How do we send notifications to user? 
     * SignalR 
