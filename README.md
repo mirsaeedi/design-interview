@@ -2,7 +2,7 @@
 
 As I'm preparing for Microsoft interview, I'm trying to organize my knowledge on a wide array of software engineering topics. Having your mind organized helps you to go through design questions smoothly, start from the bird eye view and delve into details as necessary. It enables you to break down the question into smaller sub-problems. Also, it helps you to ask clarifying questions from the interviewer to define the technical scope of the problem.
 
-I decided to prepare a framework for myself as a way for tackling design questions. The framework provides you with steps on how a question should be broken and clarified. Unlike most other articles on this topic, I do not intend to provide a guidance for juniors or folks who have just started learning about these kinds of concepts. The presented framework here is designed for myself and can be helpful for people with some years of real-world experience who are already have a degree of familiarity with the topics.
+The presented framework here does not dive into details. It's short and concise; gist of what is required to nail the interview. It is meant to serve folks with some years of real-world experience who are already have a degree of familiarity with the topics.
 
 ## Some general tips to have in mind
 
@@ -15,7 +15,7 @@ I decided to prepare a framework for myself as a way for tackling design questio
 5. Start with a general overview of your system. Display what each component does and how they interact with each other.
 6. When working on your design do not forget to mention the trade-offs you're making 
     * Cost vs Performance
-    * Storage vs Memory 
+    * Disk storage vs Memory 
     * Consistency vs Availability
     * Simplicity vs performance
 
