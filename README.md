@@ -93,6 +93,8 @@ When the broad design is finalized, dive into the details. Ask the interviewer a
     * Zookeeper 
 
   * Do you need distributed lock?
+    * Redis
+    * Azure Blob Storage: leasing technique
   
   * Do you need to handle distributed transactions?
 
