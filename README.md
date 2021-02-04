@@ -127,6 +127,7 @@ When the broad design is finalized, dive into the details. Ask the interviewer a
       * Circuit breaker 
       * Retry 
       * Timeout 
+      * Bulkhead
 
     * Solutions
       * Typed Http Clients
