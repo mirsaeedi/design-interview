@@ -76,6 +76,12 @@ When the broad design is finalized, dive into the details. Ask the interviewer a
       * GRPC for communicating between internal systems 
       * HTTP for customer facing services (Leveraging Open API standard) 
       * Messaging
+        * Queue
+        * Azure Service Bus
+        * Event Hub
+        * Event Grid
+        * Kafka
+        * RabbitMQ
      * Avoid chatty microservices 
 
   * How is the service discovery implemented? 
